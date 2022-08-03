@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000;
+    min-height: 200vh;
+    color: white;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header img {
+    padding-right: 10px;
+    margin-bottom: -5px;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #4f9387;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+
+header ul li a:hover,
+.active {
+    background-color: #fff;
+    color: #4f9387;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("/banner.jpg");
+    background-size: cover;
+}
+
+header.sticky {
+    padding: 10px 100px;
+    background: rgb(158, 237, 224, 0.8);
+}
+
+header.sticky ul li a {
+    color: #000;
+}
+
+header.sticky .logo {
+    color: #4f9387;
+}
+
+/* section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+} */
+
+/* section img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.parallax1 {
+    /* The image used */
+    background-image: url("/i3.jpg");
+
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("/i2.jpg");
+
+    min-height: 1000px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background-image: url("/i1.jpg");
+
+    min-height: 1000px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #0e0e0e;
+    color: #8996a0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.socials li {
+    list-style: none;
+    padding: 4px;
+}
+
+.socials a {
+    color: white;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.socials a:hover:not(.active) {
+    color: #4f9387;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
