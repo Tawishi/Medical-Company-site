@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
     <NavBar />
     <CustomerStats/>
+    <App/>
     <Footer/>
   </React.StrictMode>
 );

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,100&display=swap');
 
 * {
     margin: 0;
@@ -95,7 +96,7 @@ header ul li a:hover,
 
 header.sticky {
     padding: 10px 100px;
-    background: rgb(158, 237, 224, 0.8);
+    background: rgb(100, 183, 169, 0.8);
 }
 
 header.sticky ul li a {
@@ -103,6 +104,12 @@ header.sticky ul li a {
 }
 
 header.sticky .logo {
+    color: #fff;
+}
+
+header.sticky ul li a:hover,
+.active {
+    background-color: #fff;
     color: #4f9387;
 }
 
@@ -159,11 +166,11 @@ header.sticky .logo {
 }
 
 footer {
-    background-color: #0e0e0e;
-    color: #8996a0;
+    background-color: #4f9387;
+    color: #fff;
     padding-bottom: 20px;
     padding-top: 20px;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     right: 0;
@@ -175,6 +182,20 @@ footer a {
     text-decoration: none;
 }
 
+.footer--contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
 .socials {
     display: flex;
     justify-content: flex-end;
@@ -183,19 +204,19 @@ footer a {
     margin-left: auto;
 }
 
-.socials li {
+.socials li, .contents li {
     list-style: none;
     padding: 4px;
 }
 
-.socials a {
+.socials a, .contents a {
     color: white;
     font-size: 14px;
     padding: 14px 16px;
 }
 
-.socials a:hover:not(.active) {
-    color: #4f9387;
+.socials a:hover:not(.active), .contents a:hover:not(.active) {
+    color: #78ccbf;
 }
 
 .fa {
@@ -209,4 +230,36 @@ footer a {
 
 .fa:hover {
     opacity: 0.7;
+}
+
+.card {
+    width: 270px;
+    font-size: 12px;
+    margin: 45px;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    background-color: #78ccbf;
+    color: black;
+    /* justify-content: flex-start; */
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-flow: row wrap;
 }
