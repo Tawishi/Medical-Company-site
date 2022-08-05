@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -134,7 +136,7 @@ header.sticky ul li a:hover,
     background-image: url("../images/i3.jpg");
 
     /* Set a specific height */
-    min-height: 1000px;
+    min-height: 800px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -204,18 +206,21 @@ footer a {
     margin-left: auto;
 }
 
-.socials li, .contents li {
+.socials li,
+.contents li {
     list-style: none;
     padding: 4px;
 }
 
-.socials a, .contents a {
+.socials a,
+.contents a {
     color: white;
     font-size: 14px;
     padding: 14px 16px;
 }
 
-.socials a:hover:not(.active), .contents a:hover:not(.active) {
+.socials a:hover:not(.active),
+.contents a:hover:not(.active) {
     color: #78ccbf;
 }
 
@@ -234,8 +239,9 @@ footer a {
 
 .card {
     width: 270px;
-    font-size: 12px;
+    font-size: 20px;
     margin: 45px;
+    text-align: center;
 }
 
 .card--image {
@@ -244,6 +250,7 @@ footer a {
 }
 
 .card--content {
+    padding-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
@@ -262,4 +269,53 @@ footer a {
     justify-content: space-evenly;
     padding-top: 20px;
     flex-flow: row wrap;
+}
+
+.about {
+    background-color: aliceblue;
+    color: #000;
+    word-wrap: break-word;
+    font-size: 25px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.about h1 {
+    text-align: center;
+    font-family: Raleway;
+}
+
+.about p {
+    font-family: 'Quicksand';
+}
+
+.caption span.border {
+    background-color: #64b7a9;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.info {
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
