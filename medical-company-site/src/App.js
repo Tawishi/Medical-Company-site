@@ -1,9 +1,9 @@
 import SearchBar from './components/SearchBar';
-import Card from './components/Card';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cart from './pages/Cart';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import Login from './pages/Login';
 import CustomerStats from './components/CustomerStats';
 
 window.addEventListener("scroll", () => {
@@ -19,9 +19,15 @@ function App() {
       <NavBar />
       <CustomerStats />
       <SearchBar />
-      <Cart />
+      {/* <Cart /> */}
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Router>
       <Footer />
-    </div >
+    </div>
   );
 }
 

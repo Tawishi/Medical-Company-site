@@ -3,7 +3,7 @@ import Basket from './Basket';
 import Header from './Header';
 import data from '../data';
 import { useState } from 'react';
-import './index.css'
+import './cart.css'
 
 function Cart() {
   const { products } = data;

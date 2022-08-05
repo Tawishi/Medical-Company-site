@@ -3,12 +3,12 @@ function Header(props) {
     return (
         <div className="row block center">
             <div>
-                <a href="#/">
+                <a href="/">
                     <h1>Shopping Cart</h1>
                 </a>
             </div>
             <div>
-                <a href="#/cart">
+                <a href="/cart">
 
                     Cart {' '}
                     {countCartItems ? (
@@ -16,7 +16,8 @@ function Header(props) {
                     ) : ('')
                     }
 
-                </a> <a href="#/signin">Signin</a>
+                </a>
+                <a href="/login">Signin</a>
             </div>
         </div>
     );
