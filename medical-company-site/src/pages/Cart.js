@@ -38,7 +38,7 @@ function Cart() {
   }
 
   return (
-    <div className="App">
+    <div className="Cart">
       <Header countCartItems={cartItems.length}/>
       <div className="row">
         <Main onAdd={onAdd} products={products} />

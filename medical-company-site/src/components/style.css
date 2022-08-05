@@ -11,7 +11,7 @@
 }
 
 body {
-    background: #000;
+    background: white;
     min-height: 200vh;
     color: white;
 }
@@ -168,7 +168,7 @@ header.sticky ul li a:hover,
 }
 
 footer {
-    background-color: #4f9387;
+    /* background-color: #4f9387;
     color: #fff;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -176,7 +176,16 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
+    text-align: center; */
     /* may need to add z-index to put above other */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4f9387;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
     text-align: center;
 }
 
@@ -194,14 +203,12 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
     text-align: center;
 }
 
 .socials {
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
     text-align: center;
     margin-left: auto;
 }

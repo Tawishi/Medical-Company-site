@@ -16,14 +16,14 @@ window.addEventListener("scroll", () => {
 function App() {
   return (
     <div>
-      <NavBar />
-      <CustomerStats />
-      <SearchBar />
+      
       {/* <Cart /> */}
       <Router>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/" element={<><NavBar /><CustomerStats /></>}/>
+          <Route path="/login" element={<><NavBar /><Login /></> }/>
+          <Route path="/search" element={<><NavBar /><SearchBar /></> }/>
+          <Route path="/cart" element={<><NavBar /><Cart /></> }/>
         </Routes>
       </Router>
       <Footer />
