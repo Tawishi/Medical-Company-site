@@ -13,6 +13,27 @@ function Team() {
         item.classNameList.add("active");
     }
 
+    const slideSlideOne = (e) => {
+        console.log(e.target.style.transform);
+        // e.target.style.transform = "translateX(0px)";
+        console.log(e.target.style.transform);
+    }
+    const slideSlideTwo = (e) => {
+        console.log(e.target.style.transform);
+        // e.target.style.transform = "translateX(-800px)";
+        console.log(e.target.style.transform);
+    }
+    const slideSlideThree = (e) => {
+        console.log(e.target.style.transform);
+        // e.target.style.transform = "translateX(-1600px)";
+        console.log(e.target.style.transform);
+    }
+    const slideSlideFour = (e) => {
+        console.log(e.target.style.transform);
+        // e.target.style.transform = "translateX(-2400px)";
+        console.log(e.target.style.transform);
+    }
+
     // btn[0].onclick = function () {
     //     slide.style.transform = "translateX(0px)";
     //     setActive(this);
@@ -41,24 +62,10 @@ function Team() {
             <h1>Developer Team</h1>
             <div className="container">
                 <div className="indicator">
-                    <span className="btn active" onClick={ () => {
-                        slide.style.transform = "translateX(0px)";
-                        setActive(this);
-                        console.errorlog(this);
-                    }}></span>
-                    <span className="btn" onClick={ () => {
-                        slide.style.transform = "translateX(-800px)";
-                        setActive(this);
-                    }}></span>
-                    <span className="btn" onClick={ () => {
-                        slide.style.transform = "translateX(-1600px)";
-                        setActive(this);
-                    }}></span>
-                    <span className="btn" onClick={ () => {
-                        slide.style.transform = "translateX(-2400px)";
-                        setActive(this);
-                    }}></span>
-
+                    <span className="btn" onClick={slideSlideOne}></span>
+                    <span className="btn" onClick={slideSlideTwo}></span>
+                    <span className="btn" onClick={slideSlideThree}></span>
+                    <span className="btn" onClick={slideSlideFour}></span>
                 </div>
                 <div className="reviews">
                     <div className="slide-row" id="slide">
