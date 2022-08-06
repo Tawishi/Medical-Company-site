@@ -1,11 +1,11 @@
 function Basket(props) {
     const { cartItems, onAdd, onRemove } = props;
     const itemsPrice = cartItems.reduce((a, c) => {
-        console.log(c.price, c.qty, a);
+        // console.log(c.price, c.qty, a);
         let productPrice = c.price * c.qty;
-        console.log(productPrice);
-        return a + Number(c.price)*Number(c.qty);
-    },0);
+        // console.log(productPrice);
+        return a + Number(c.price) * Number(c.qty);
+    }, 0);
     const taxPrice = itemsPrice * 0.14;
     const shippingPrice = itemsPrice > 2000 ? 0 : 50;
     const totalPrice = itemsPrice + taxPrice + shippingPrice;
@@ -54,9 +54,11 @@ function Basket(props) {
                     </div>
                     <hr />
                     <div className="row">
-                        <button onClick={() => alert('Implement Checkout')}>
-                            Checkout
-                        </button>
+                        <a href="/login">
+                            <button>
+                                Checkout
+                            </button>
+                        </a>
                     </div>
                 </div>
             )}

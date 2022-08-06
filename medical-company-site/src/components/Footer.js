@@ -15,7 +15,7 @@ function Footer() {
             <div class="footer--contents">
                 <ul class="contents">
                     <li>Blogs</li>
-                    <li>Developer Team</li>
+                    <li><a href="/team" target="_blank">Developer Team</a></li>
                 </ul>
                 <ul class="socials" id="socials">
                     <li><a href="https://www.facebook.com/" target="_blank"> <FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
